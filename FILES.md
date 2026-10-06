@@ -24,3 +24,6 @@ These are the project files I have found and recovered from the Boeing 787 cockp
 
 ## Visio stencils
 - `stencils/` — reusable breakout, circuit, and Arduino Mega shapes used while drawing the wiring diagrams
+
+## Photos
+Photos I have recoreded documenting various panels, builds, etc.
