@@ -1,0 +1,848 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="7351c629-d542-4f9c-9307-763deb31ad67">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:A/P PILOT LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT MASTER, Bool)  1 ==" UUID="49c4c16d-8e2a-4f21-90a2-498832c8c37f" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="AP LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="289153d3-bdc9-44d5-9d42-e7ec201f7c1a">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:A/P COPILOT LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT MASTER, Bool)  1 ==" UUID="49c4c16d-8e2a-4f21-90a2-498832c8c37f" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="AP COPILOT LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8dea1093-1c6e-472b-9eaf-daed1cb8b7ff">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:A/T LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:WT_Boeing_Autothrottle_Status, Bool) 3 ==" UUID="49c4c16d-8e2a-4f21-90a2-498832c8c37f" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="1" operand="=" ifValue="0" elseValue="1" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="AT LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef42dc41-dfb2-4a23-a30b-863a2391badc">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT: A/T FLCH LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_FLCH_ACTIVE, Bool) 1==" UUID="49c4c16d-8e2a-4f21-90a2-498832c8c37f" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="FLCH LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f5abc58c-52eb-4e1f-8058-ee9d3eaf92cb">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VNAV LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_VNAV_ARMED, Bool)  1 ==" UUID="49c4c16d-8e2a-4f21-90a2-498832c8c37f" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="VNAV LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6bff5e09-150e-4ba5-bdfe-8a68b140ba38">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:LNAV LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_LNAV_ARMED, Bool)  1 ==" UUID="49c4c16d-8e2a-4f21-90a2-498832c8c37f" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="LNAV LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8fc7cb6b-246d-4ffb-901d-8fc3f78b35d3">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:ALT HOLD LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_ALT_HOLD_ACTIVE) 1 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="HOLD COPILOT LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="635309c5-bd37-4864-beb1-6612358fce11">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:HDG HOLD LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_HEADING_LOCK_ACTIVE) 1 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="=" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="HOLD PILOT LED" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="false" ref="7351c629-d542-4f9c-9307-763deb31ad67" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07942a69-16ff-4512-b81c-cd028ecffb8d">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VS/FPA LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_FPA_MODE_ACTIVE) 0 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="1" operand="=" ifValue="7" elseValue="_" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="3" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="152b54ca-081c-4daa-863e-780bb1d315de">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:TRK/HDG LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_TRK_MODE_ACTIVE)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,2,7)" />
+          <comparison active="True" value="1" operand="=" ifValue="_" elseValue="7" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="2" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3a2d491-a13d-419c-8681-b016d61c3ba9">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:MACH/IAS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_AirSpeedIsInMach) 1 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="1" operand="=" ifValue="__" elseValue="77" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="6,7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a254359a-e40b-4385-a774-e179f03848eb">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT CLB/CON LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_CLBCON_ACTIVE) 1 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="CLBCON LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9e42fec5-abd1-4a36-82af-6612d9f63436">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT VS/FPA LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_VS_ACTIVE) 1 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="VS FPA LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c82e582-393d-42d6-aefb-07cf6d0e6e50">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT APP LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_APR_ARMED) 1 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="APP LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cba941a6-089e-4fae-b847-9d56ba37a178">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT LOC LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:AP_LOC_ARMED) 1 ==" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" pin="LOC LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9c71be03-368a-4559-8c01-60a4cec4902d">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:IAS VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x07E2" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" />
+        <test type="Float" value="111" />
+        <modifiers>
+          <transformation active="True" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4,5" />
+        <preconditions>
+          <precondition type="config" active="true" ref="e3a2d491-a13d-419c-8681-b016d61c3ba9" operand="=" value="77" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a6d9b3d0-42de-49fc-96c2-b761b4b8ee78">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT ALTITUDE VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:HUD_AP_SELECTED_ALTITUDE, Int)" UUID="09df7de7-01e4-43ac-8015-9573385d8acb" />
+        <test type="Float" value="11111" />
+        <modifiers>
+          <transformation active="False" expression="$/19975.3728" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="4" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4,5,6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3dda620e-023b-4b47-9336-c452f25ad534">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:HDG VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x07CC" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$/182" />
+          <comparison active="True" value="0" operand="&gt;=" ifValue="$" elseValue="$+360" />
+          <comparison active="True" value="0" operand="=" ifValue="360" elseValue="$" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="2" ledModuleSize="6" ledPadding="True" ledReverseDigits="True" ledPaddingChar="0" ledDigits="2,3,4,5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="588fae72-5583-4bd8-9152-722942cd5f4e">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VS VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x07F2" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" />
+        <test type="Float" value="711111" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="OOOO" elseValue="$" />
+          <transformation active="False" expression="$" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="3" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4,5,6" />
+        <preconditions>
+          <precondition type="config" active="true" ref="07942a69-16ff-4512-b81c-cd028ecffb8d" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="9e42fec5-abd1-4a36-82af-6612d9f63436" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8f17c881-d91d-458b-a014-f80bb11b9d5f">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VS FPA OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="0" UUID="0" />
+        <test type="Float" value="711111" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue=" " elseValue="$" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="3" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4,5,6" />
+        <preconditions>
+          <precondition type="config" active="true" ref="9e42fec5-abd1-4a36-82af-6612d9f63436" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="26de3e90-0d68-447e-ba45-740b01b28933">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT FPA VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:WT_AP_FPA_TARGET:1)" UUID="af5d6abe-5e90-46f8-be85-1bc54ce4be26" />
+        <test type="String" value="" />
+        <modifiers>
+          <transformation active="True" expression="Round($,1)" />
+          <transformation active="True" expression="if($=1||2||3||4||5||6||7||8||9,$*10,$)" />
+          <comparison active="True" value="-1" operand="=" ifValue="-0.1" elseValue="$" />
+          <comparison active="True" value="-2" operand="=" ifValue="-0.2" elseValue="$" />
+          <comparison active="True" value="-3" operand="=" ifValue="-0.3" elseValue="$" />
+          <comparison active="True" value="-4" operand="=" ifValue="-0.4" elseValue="$" />
+          <comparison active="True" value="-5" operand="=" ifValue="-0.5" elseValue="$" />
+          <comparison active="True" value="-6" operand="=" ifValue="-0.6" elseValue="$" />
+          <comparison active="True" value="-7" operand="=" ifValue="-0.7" elseValue="$" />
+          <comparison active="True" value="-8" operand="=" ifValue="-0.8" elseValue="$" />
+          <comparison active="True" value="-9" operand="=" ifValue="-0.9" elseValue="$" />
+          <comparison active="True" value="1" operand="=" ifValue="0.1" elseValue="$" />
+          <comparison active="True" value="2" operand="=" ifValue="0.2" elseValue="$" />
+          <comparison active="True" value="3" operand="=" ifValue="0.3" elseValue="$" />
+          <comparison active="True" value="4" operand="=" ifValue="0.4" elseValue="$" />
+          <comparison active="True" value="5" operand="=" ifValue="0.5" elseValue="$" />
+          <comparison active="True" value="6" operand="=" ifValue="0.6" elseValue="$" />
+          <comparison active="True" value="7" operand="=" ifValue="0.7" elseValue="$" />
+          <comparison active="True" value="8" operand="=" ifValue="0.8" elseValue="$" />
+          <comparison active="True" value="9" operand="=" ifValue="0.9" elseValue="$" />
+          <comparison active="True" value="0" operand="=" ifValue="O0" elseValue="$" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="3" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4,5,6" ledDecimalPoints="3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="07942a69-16ff-4512-b81c-cd028ecffb8d" operand="!=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="9e42fec5-abd1-4a36-82af-6612d9f63436" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d0a3895e-65d0-436d-a250-8eb50909cf1d">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:MACH VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x07E8" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" />
+        <test type="String" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$/65.5366666667" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP OUTPUTS/ SN-7f4-fdc" trigger="normal" ledAddress="7SEGMENT" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4,5" ledDecimalPoints="5,6" />
+        <preconditions>
+          <precondition type="config" active="true" ref="e3a2d491-a13d-419c-8681-b016d61c3ba9" operand="!=" value="77" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5d761504-221a-4043-add8-d1470e859819">
+      <active>false</active>
+      <description>q</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT MAX BANK ID, Number)" UUID="d7cc3af6-9c4f-4137-a970-7b615d9a7414" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="ac156839-14e7-43a5-baea-605f09fddab5">
+      <active>true</active>
+      <description>787:MPC:AUTOPILOT: HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ENC HDG" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="26e6436d-3eb5-4025-b8ad-57bcc1c55035" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="26e6436d-3eb5-4025-b8ad-57bcc1c55035" />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_INC)" presetId="a5629735-057a-4442-86f3-27c11e9dfcc8" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_INC)" presetId="a5629735-057a-4442-86f3-27c11e9dfcc8" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c499e450-32dc-4ffe-b550-59422ea7b684">
+      <active>true</active>
+      <description>787:MPC:AUTOPILOT: HDG:Heading SEL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ENC HDG BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS01B_FMC_1_AP_HEADING_SEL)" presetId="37546b35-9323-4114-8fc0-dd39b9a0928d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="440e97be-8e39-4d1f-9997-427e48b2cd41">
+      <active>true</active>
+      <description>787:MPC:AUTOPILOT: HDG:Heading HOLD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="HOLD PILOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_WING_LEVELER_ON)" presetId="37546b35-9323-4114-8fc0-dd39b9a0928d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3fa8020e-8be9-4e91-8003-239a67d9179a">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT: A/P Enage Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="AP PILOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AUTOPILOT_ON)" presetId="20c2e2b5-c270-486a-ac31-dce157967d74" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="61059c1a-61a3-436f-8b70-3221799a9d51">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT: A/P Engage Copilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="AP COPILOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AUTOPILOT_ON)" presetId="20c2e2b5-c270-486a-ac31-dce157967d74" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ab9306aa-9df9-4197-94b1-45b300da509e">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ENC ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="p0 &#xA;1 p0 0 &gt; ? sp0 &#xA;3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment) l0 * + (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) &#xA;p0 0 &gt; if{ &#xA; (&gt;H:AP_KNOB_Up) &#xA;} els{ &#xA; (&gt;H:AP_KNOB_Down) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="f5333170-4332-40fb-aaa6-4ade46dc0f36" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="p0 &#xA;1 p0 0 &gt; ? sp0 &#xA;3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment) l0 * + (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) &#xA;p0 0 &gt; if{ &#xA; (&gt;H:AP_KNOB_Up) &#xA;} els{ &#xA; (&gt;H:AP_KNOB_Down) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="f5333170-4332-40fb-aaa6-4ade46dc0f36" />
+          <onRight type="MSFS2020CustomInputAction" command="p0 -1 p0 0 &gt; ? sp0 &#xA;3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment) l0 * + (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) &#xA;p0 0 &gt; if{ &#xA; (&gt;H:AP_KNOB_Up) &#xA;} els{ &#xA; (&gt;H:AP_KNOB_Down) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="143e3af0-1d51-4067-8385-5b24346932ef" />
+          <onRightFast type="MSFS2020CustomInputAction" command="p0 -1 p0 0 &gt; ? sp0 &#xA;3 (A:AUTOPILOT ALTITUDE LOCK VAR:3, feet) (L:XMLVAR_Autopilot_Altitude_Increment) l0 * + (&gt;K:2:AP_ALT_VAR_SET_ENGLISH) &#xA;p0 0 &gt; if{ &#xA; (&gt;H:AP_KNOB_Up) &#xA;} els{ &#xA; (&gt;H:AP_KNOB_Down) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="143e3af0-1d51-4067-8385-5b24346932ef" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5013eb1b-2a7c-4b5a-b452-1f4c23c74883">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:ALT AUTO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ALT AUTO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="100 (&gt;L:XMLVAR_Autopilot_Altitude_Increment)&#xA;&#xA;" presetId="fb69e572-f2bb-4358-990a-e961827f1ffc" />
+          <onRelease type="MSFS2020CustomInputAction" command="" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a600aad0-4f10-4cc7-bed9-ca4884fa9fc4">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:ALT 1000</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ALT 1000" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1000 (&gt;L:XMLVAR_Autopilot_Altitude_Increment)" presetId="fb69e572-f2bb-4358-990a-e961827f1ffc" />
+          <onRelease type="MSFS2020CustomInputAction" command="" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="025ce0e8-8e6c-4aae-baab-df21daaae337">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:ALT INTERVENTION</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ALT ENC BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;H:AS01B_FMC_1_AP_ALT_INTERVENTION)" presetId="f7a5a232-e763-4f14-ade6-96d59fccf605" />
+          <onRelease type="MSFS2020CustomInputAction" command="100 (&gt;L:XMLVAR_Autopilot_Altitude_Increment)&#xA;" presetId="fb69e572-f2bb-4358-990a-e961827f1ffc" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8f4c5c5e-e82c-4038-9af5-c98b1f4efddd">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:ALT HOLD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="HOLD COPILOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AUTOPILOT_Altitude_Button_Position) (&gt;H:AS01B_FMC_1_AP_ALT_HOLD) 1 (&gt;O:_ButtonAnimVar) (L:AP_ALT_HOLD_ACTIVE) sp0 1 0 l0 ? (&gt;O:AUTOPILOT_Altitude_Button_Position)" presetId="f7a5a232-e763-4f14-ade6-96d59fccf605" />
+          <onRelease type="MSFS2020CustomInputAction" command="" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4efe60b2-1e5b-4b34-97b1-15db5ab5b1ee">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS01B_FMC_1_AP_VNAV)" presetId="cbdd6c21-694a-4ade-b12f-bdf85c3ab9d6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3c1c4135-85e3-47c2-888c-111299770848">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:FLCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="FLCH" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS01B_FMC_1_AP_FLCH)" presetId="8d1a5848-0d0a-4df9-bdd6-0afb485fc351" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="010f3cea-a0fa-4010-9e08-3ad07141bef7">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:FD PILOT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="FD PILOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE:1, Bool) (L:FD2_IS_ON) ! and&#xA;   if{ 1 (&gt;K:TOGGLE_FLIGHT_DIRECTOR) }&#xA;0 (&gt;L:FD1_IS_ON,Bool)" presetId="1799a407-d845-4816-88e9-16f790e0074d" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE:1, Bool) ! &#xA;   if{ 1 (&gt;K:TOGGLE_FLIGHT_DIRECTOR) }&#xA;1 (&gt;L:FD1_IS_ON,Bool)" presetId="a767e2a8-2031-43c4-b630-7e570b1686c8" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d6467788-ab84-450e-8625-1beec0123ef5">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:FD COPILOT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="FD COPILOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE:2, Bool) ! &#xA;   if{ 2 (&gt;K:TOGGLE_FLIGHT_DIRECTOR) }&#xA;1 (&gt;L:FD2_IS_ON,Bool)" presetId="1799a407-d845-4816-88e9-16f790e0074d" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE:2, Bool)  (L:FD1_IS_ON) ! and  &#xA;   if{ 2 (&gt;K:TOGGLE_FLIGHT_DIRECTOR) }&#xA;0 (&gt;L:FD2_IS_ON,Bool)" presetId="1799a407-d845-4816-88e9-16f790e0074d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18ca0c2a-7183-4b21-992d-6956fd2d2037">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:LNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS01B_FMC_1_AP_LNAV)" presetId="ca3a507e-2b64-419e-9fda-2a2f9b4c0e15" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="21f13613-15d5-4d09-b7cb-b3641ccfdd99">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:BANK AUTO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="BANK AUTO-10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="" presetId="-" />
+          <onRelease type="MSFS2020CustomInputAction" command="5 (&gt;K:AP_MAX_BANK_SET)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4a146359-f50b-4984-b827-ec27b3bdaf40">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:BANK 10</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="BANK AUTO-10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="4 (&gt;K:AP_MAX_BANK_SET)" presetId="ca3a507e-2b64-419e-9fda-2a2f9b4c0e15" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2760c702-e785-4973-b0cb-59d9a5de96b4">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:BANK 15</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="3 (&gt;K:AP_MAX_BANK_SET)" presetId="ca3a507e-2b64-419e-9fda-2a2f9b4c0e15" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="39f9c519-a91f-4fa2-8d1d-3e981384f5ff">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:BANK 20</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;K:AP_MAX_BANK_SET)" presetId="ca3a507e-2b64-419e-9fda-2a2f9b4c0e15" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cf3ff84f-a48b-46df-9f9b-14d6418b139e">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:BANK 25</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:AP_MAX_BANK_SET)" presetId="ca3a507e-2b64-419e-9fda-2a2f9b4c0e15" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="10e3f084-6f6b-4ef8-b13d-4e8c1d640a6a">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:BANK 30</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="BANK 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:AP_MAX_BANK_SET)" presetId="ca3a507e-2b64-419e-9fda-2a2f9b4c0e15" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7fe4c13f-1e29-454d-9f88-106c35b4bdef">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:A/T ARM L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="AT LEFT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:AS01B_AUTO_THROTTLE_ARM_STATE, Bool) (L:ATR_IS_ON) ! and&#xA;   if{ 1 (&gt;K:AUTO_THROTTLE_ARM) }&#xA;0 (&gt;L:ATL_IS_ON,Bool)" presetId="bf9ffbe3-82ae-4b5d-a324-e5e9d9c55123" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:AS01B_AUTO_THROTTLE_ARM_STATE, Bool) ! &#xA;   if{ 1 (&gt;K:AUTO_THROTTLE_ARM) }&#xA;1 (&gt;L:ATL_IS_ON,Bool)" presetId="2f7851e7-8032-4019-90bb-73520a2a359a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4f372c21-91cd-4970-bb9e-72519b682768">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:A/T ARM R</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="AT RIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:AS01B_AUTO_THROTTLE_ARM_STATE, Bool)  (L:ATL_IS_ON) ! and  &#xA;   if{ 2 (&gt;K:AUTO_THROTTLE_ARM) }&#xA;0 (&gt;L:ATR_IS_ON,Bool)" presetId="bf9ffbe3-82ae-4b5d-a324-e5e9d9c55123" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:AS01B_AUTO_THROTTLE_ARM_STATE, Bool) ! &#xA;   if{ 2 (&gt;K:AUTO_THROTTLE_ARM) }&#xA;1 (&gt;L:ATR_IS_ON,Bool)" presetId="2f7851e7-8032-4019-90bb-73520a2a359a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="790300f5-c35b-4f93-932c-e4ce947c7d85">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:Disengage</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="AP DISENGAGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:AUTOPILOT_DISENGAGE_SET)" presetId="d0284afc-b22d-420a-ae1e-35e0076e3a94" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:AUTOPILOT_DISENGAGE_SET)" presetId="6956c0e8-4f85-4c08-86ec-302aaf4eff8a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2eef7bfa-d280-4131-a999-c3f21eb9d520">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ENC VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="-1  p0 0 &gt; ? sp0 &#xA;(L:XMLVAR_FPA_MODE_ACTIVE) if{ &#xA; (L:WT_AP_FPA_Target:1, degree) 0.1 l0 * + 9.9 min -9.9 max (&gt;L:WT_AP_FPA_Target:1, degree) &#xA;} els{ &#xA; 1 (A:AUTOPILOT VERTICAL HOLD VAR:1, feet per minute) 100 l0 * + (&gt;K:2:AP_VS_VAR_SET_ENGLISH) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="aad21181-9c0f-497a-9801-641c8453fadd" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(&gt;K:AP_VS_VAR_DEC)" presetId="aad21181-9c0f-497a-9801-641c8453fadd" />
+          <onRight type="MSFS2020CustomInputAction" command="1  p0 0 &gt; ? sp0 &#xA;(L:XMLVAR_FPA_MODE_ACTIVE) if{ &#xA; (L:WT_AP_FPA_Target:1, degree) 0.1 l0 * + 9.9 min -9.9 max (&gt;L:WT_AP_FPA_Target:1, degree) &#xA;} els{ &#xA; 1 (A:AUTOPILOT VERTICAL HOLD VAR:1, feet per minute) 100 l0 * + (&gt;K:2:AP_VS_VAR_SET_ENGLISH) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="aad21181-9c0f-497a-9801-641c8453fadd" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(&gt;K:AP_VS_VAR_INC)" presetId="7ee48d79-258c-419a-9780-f35024a7bd2b" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fca33595-9524-44b2-835b-90a542d7e7e1">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VS/FPA Enable</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="VS FPA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS01B_FMC_1_AP_VSPEED)" presetId="6a81e461-5a7b-4dbf-b0b2-7cacc179df42" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="760ffcb3-94f9-4716-8481-63041168e2a2">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="ENC IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="1 p0 0 &gt; ? sp0 &#xA;(L:XMLVAR_AirSpeedIsInMach) if{ &#xA; 1 (A:AUTOPILOT MACH HOLD VAR:1, mach) 0.01 l0 * + 100 * (&gt;K:2:AP_MACH_VAR_SET) &#xA;} els{ &#xA; 1 (A:AUTOPILOT AIRSPEED HOLD VAR:1, knots) 1 l0 * + 0 max (&gt;K:2:AP_SPD_VAR_SET) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="f5333170-4332-40fb-aaa6-4ade46dc0f36" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="1 p0 0 &gt; ? sp0 &#xA;(L:XMLVAR_AirSpeedIsInMach) if{ &#xA; 1 (A:AUTOPILOT MACH HOLD VAR:1, mach) 0.01 l0 * + 100 * (&gt;K:2:AP_MACH_VAR_SET) &#xA;} els{ &#xA; 1 (A:AUTOPILOT AIRSPEED HOLD VAR:1, knots) 1 l0 * + 0 max (&gt;K:2:AP_SPD_VAR_SET) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="-" />
+          <onRight type="MSFS2020CustomInputAction" command="-1 p0 0 &gt; ? sp0 &#xA;(L:XMLVAR_AirSpeedIsInMach) if{ &#xA; 1 (A:AUTOPILOT MACH HOLD VAR:1, mach) 0.01 l0 * + 100 * (&gt;K:2:AP_MACH_VAR_SET) &#xA;} els{ &#xA; 1 (A:AUTOPILOT AIRSPEED HOLD VAR:1, knots) 1 l0 * + 0 max (&gt;K:2:AP_SPD_VAR_SET) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="f5333170-4332-40fb-aaa6-4ade46dc0f36" />
+          <onRightFast type="MSFS2020CustomInputAction" command="-1 p0 0 &gt; ? sp0 &#xA;(L:XMLVAR_AirSpeedIsInMach) if{ &#xA; 1 (A:AUTOPILOT MACH HOLD VAR:1, mach) 0.01 l0 * + 100 * (&gt;K:2:AP_MACH_VAR_SET) &#xA;} els{ &#xA; 1 (A:AUTOPILOT AIRSPEED HOLD VAR:1, knots) 1 l0 * + 0 max (&gt;K:2:AP_SPD_VAR_SET) &#xA;} &#xA;(O:_KnobAnimVar) 10 p0 * + dnor (&gt;O:_KnobAnimVar)" presetId="-" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f0ad262b-e655-4c5d-9f42-bb79a6d8e696">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:CLB/CON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="CLBCON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AUTOPILOT_CLBCON_Button_Position) (&gt;H:AS01B_FMC_1_AP_CLBCON)  1 (&gt;O:_ButtonAnimVar)   (L:AP_CLBCON_ACTIVE) sp0 1 0 l0 ? (&gt;O:AUTOPILOT_CLBCON_Button_Position) " presetId="143e3af0-1d51-4067-8385-5b24346932ef" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8e4f77f4-0bc9-46f1-bfc4-6ce5eb185aef">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:LOC/FAC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="LOCFAC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command=" p0 1 min 0 max (&gt;O:AUTOPILOT_Localizer_Button_Position) (&gt;K:AP_LOC_HOLD)  1 (&gt;O:_ButtonAnimVar)   (L:AP_LOC_ARMED) sp0 1 0 l0 ? (&gt;O:AUTOPILOT_Localizer_Button_Position) " presetId="143e3af0-1d51-4067-8385-5b24346932ef" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f8d656a-f345-44ca-a1d3-df4aec56f14a">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:APP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="APP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AUTOPILOT_Altitude_Button_Position) (&gt;H:AS01B_FMC_1_AP_ALT_HOLD) 1 (&gt;O:_ButtonAnimVar) (L:AP_ALT_HOLD_ACTIVE) sp0 1 0 l0 ? (&gt;O:AUTOPILOT_Altitude_Button_Position)" presetId="143e3af0-1d51-4067-8385-5b24346932ef" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="31beda4c-19e3-45c0-9b32-7f1032b22c69">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:AT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="AT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS01B_FMC_1_AP_AT_ENGAGE)" presetId="d0714eea-61a2-4725-adb0-fdb811d8b4a5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e125977a-2db0-4352-ad1b-d0351a1ba4d9">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:VS-&gt;FPA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AIRLINER_VS_FPA_Position) 1 (&gt;L:XMLVAR_FPA_MODE_ACTIVE) 1 (&gt;O:_ButtonAnimVar)" presetId="0" />
+          <onRelease type="MSFS2020CustomInputAction" command="" presetId="-" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="07942a69-16ff-4512-b81c-cd028ecffb8d" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dbafd7b4-c287-4161-8369-ae8426327bb8">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:FPA-&gt;VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AIRLINER_VS_FPA_Position) p0 (&gt;L:XMLVAR_FPA_MODE_ACTIVE) 1 (&gt;O:_ButtonAnimVar)" presetId="0" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="07942a69-16ff-4512-b81c-cd028ecffb8d" operand="!=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="add75b3b-eeaa-45c5-9617-f6f2e4ce3b6c">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:HDG-&gt;TRK</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="HDG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AIRLINER_HDG_TRK_Position) 1 (&gt;L:XMLVAR_TRK_MODE_ACTIVE) 1 (&gt;O:_ButtonAnimVar)" presetId="0" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="152b54ca-081c-4daa-863e-780bb1d315de" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e41267f4-1396-4884-ba76-9261def8b935">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:TRK-&gt;HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="HDG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AIRLINER_HDG_TRK_Position) 0 (&gt;L:XMLVAR_TRK_MODE_ACTIVE) 1 (&gt;O:_ButtonAnimVar)" presetId="0" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="152b54ca-081c-4daa-863e-780bb1d315de" operand="!=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="80089e8e-f5df-4fa0-917c-a87cce4b3347">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:IAS-&gt;MACH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="IAS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AUTOPILOT_SpeedToggle_Mode_Position) (&gt;H:AS01B_FMC_1_AP_SPEED_MACH_TOGGLE) 1 (&gt;O:_ButtonAnimVar)" presetId="f7ab3fba-61e4-4762-838c-4f957218c2db" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="e3a2d491-a13d-419c-8681-b016d61c3ba9" operand="=" value="77" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cb016acc-c5ee-49a6-b17d-be238c6bf61b">
+      <active>true</active>
+      <description>787:MCP:AUTOPILOT:MACH-&gt;IAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP INPUTS/ SN-4e9-8e3" name="IAS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="p0 1 min 0 max (&gt;O:AUTOPILOT_SpeedToggle_Mode_Position) (&gt;H:AS01B_FMC_1_AP_SPEED_MACH_TOGGLE) 0 (&gt;O:_ButtonAnimVar)" presetId="f7ab3fba-61e4-4762-838c-4f957218c2db" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="e3a2d491-a13d-419c-8681-b016d61c3ba9" operand="!=" value="77" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0f903a74-0ce9-4fea-a9b1-becd043746a3">
+      <active>false</active>
+      <description>e</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4e9-8e3" name="Multiplexer" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="11">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_MASTER)" presetId="20c2e2b5-c270-486a-ac31-dce157967d74" />
+        </inputMultiplexer>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a6ef0370-3b3c-43f8-b4f1-0d9341c616a7">
+      <active>false</active>
+      <description>ee</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4e9-8e3" name="Multiplexer" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="14">
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:AUTOPILOT_DISENGAGE_SET)" presetId="6956c0e8-4f85-4c08-86ec-302aaf4eff8a" />
+        </inputMultiplexer>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
